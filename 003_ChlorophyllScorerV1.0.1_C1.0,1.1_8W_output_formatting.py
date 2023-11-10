@@ -74,20 +74,4 @@ for i in os.listdir():
 			outfile.write(f"box_{boxNumber}\twell_{j+1}\t{exposure}\t{day}\t{wellChloroScore}\n")
 outfile.close()
 
-"""
-import cv2
-import numpy as np
-import os
-import time
-os.chdir(input("Please imput picture file directory: "))
-print(os.listdir()[0])
-img=cv2.imread(os.listdir()[0], cv2.IMREAD_GRAYSCALE)
-croppedImg=cv2.resize(img[0:2200, 244:2444],(512,512), interpolation=cv2.INTER_AREA)
-print(img.shape, croppedImg.shape)
-cv2.imshow("x", croppedImg)
-for i in range(8):
-	cv2.imshow("x", croppedImg[0:512,64*i:64+64*i])
-	cv2.waitKey(0)
-"""
-
 
